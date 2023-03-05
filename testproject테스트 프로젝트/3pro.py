@@ -1,3 +1,4 @@
+## 끝말잇기 게임 유튜브와 구글링으로 보면서 만든 코린이
 import random
 words = ["가위", "향수", "자동차", "총기거치대", "수입도구"]
 name = random.choice(words)
