@@ -11,14 +11,17 @@ print("시작 단어는 {}입니다.".format(name))
 
 while True:
     answer = input("(name)>>")
-    words.append(name)
-    if name[-1] == answer[0]:
-        print("다음단어를 입력해주세요: ")
-        name = answer
-        total_score += 1
-    elif name[-1] != answer[0]:
+    if name[-1] != answer[0]:
         print("잘못된 단어를 입력했습니다. \n게임을 종료합니다:(")
         break
+    elif answer in words:
+        print("중복된 단어입니다. \n게임을 종료합니다:(")
+        break
+    elif name[-1] == answer[0]:
+        name = answer
+        words.append(name)
+        print("다음단어를 입력해주세요: ", name)
+        total_score += 1
 
 if total_score >= limit_score:
     print("=" * 10)
