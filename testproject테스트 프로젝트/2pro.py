@@ -1,3 +1,4 @@
+## 야구 게임 강의 보면서 차근차근 만들어 본 작품 물론 대부분 따라 쓴것 ㅠㅠ..
 from  random import randint
 def baseballnumber():
     bass = []
